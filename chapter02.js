@@ -1,7 +1,7 @@
 // Looping A Triangle
 
 let string = "#";
-const totalNumber = 7;
+let totalNumber = 7;
 
 while(string.length <= totalNumber){
     console.log(string);
@@ -46,3 +46,32 @@ for(let i = 1; i <= 100 ; i++){
 
 // Chessboard
 
+let size = 8;
+let even = "", odd = "";
+let pound = true;
+
+// create lines
+
+for(let i = 0; i < size; i++){
+    if(pound){
+        even += "#";
+        odd  += " ";
+        pound = false;
+    }
+    else{
+        even += " ";
+        odd  += "#";
+        pound = true;
+    }
+}
+
+// draw board
+
+for(let i = 0; i < size; i++){
+    if(i % 2 == 0){
+        console.log(even);
+    }
+    else{
+        console.log(odd);
+    }
+}
