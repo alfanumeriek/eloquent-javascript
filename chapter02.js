@@ -67,11 +67,15 @@ for(let i = 0; i < size; i++){
 
 // draw board
 
+let board = "";
+
 for(let i = 0; i < size; i++){
     if(i % 2 == 0){
-        console.log(even);
+        board += even + "\n";
     }
     else{
-        console.log(odd);
+        board += odd + "\n";
     }
 }
+
+console.log(board);
