@@ -29,3 +29,16 @@ console.log(isEven(-1));
 
 
 // Bean counting
+
+let countChar = function(string, character){
+    
+    let counter = 0;
+    
+    for(let i = 0; i < string.length; i++){
+        if(string[i] == character) counter++;
+    }
+    return counter;
+}
+
+console.log(countChar("BBC", "B"));
+console.log(countChar("kakkerlak", "k"));
